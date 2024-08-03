@@ -1,6 +1,6 @@
 import streamlit as st
 from openai import OpenAI
-from pypdf import PdfReader
+from pypdf2 import PdfReader
 import docx2txt
 import tempfile
 from dotenv import load_dotenv, find_dotenv
