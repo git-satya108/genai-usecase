@@ -13,6 +13,7 @@ load_dotenv(find_dotenv())
 st.image("imagebanner.png", use_column_width=False)
 
 # Initialize OpenAI client
+client = OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
 client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
 # Initialize session state for chat history
